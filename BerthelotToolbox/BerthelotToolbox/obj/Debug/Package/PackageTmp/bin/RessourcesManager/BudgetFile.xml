@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Budget>
+  <Expense>
+    <Nom>Alimentation</Nom>
+    <BudgetInitial>400</BudgetInitial>
+    <TotalEnCours>0</TotalEnCours>
+  </Expense>
+  <Expense>
+    <Nom>Santé</Nom>
+    <BudgetInitial>150</BudgetInitial>
+    <TotalEnCours>0</TotalEnCours>
+  </Expense>
+  <Expense>
+    <Nom>Loisirs</Nom>
+    <BudgetInitial>150</BudgetInitial>
+    <TotalEnCours>0</TotalEnCours>
+  </Expense>
+  <Expense>
+    <Nom>Essence</Nom>
+    <BudgetInitial>150</BudgetInitial>
+    <TotalEnCours>0</TotalEnCours>
+  </Expense>
+</Budget>
