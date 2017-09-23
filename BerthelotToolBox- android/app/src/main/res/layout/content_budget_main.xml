@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fr.clisson.berthelot.olivier.berthelottoolbox.BudgetMain"
+    tools:showIn="@layout/activity_budget_main">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="237dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="13dp"
+        android:text="Ajouter Dépense"
+        android:onClick="ajouterDepenses"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="194dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="19dp"
+        app:layout_constraintLeft_toRightOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/TextviewEssence"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Essence"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewLoisirs" />
+
+    <TextView
+        android:id="@+id/TextviewLoisirs"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Loisirs"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewSante" />
+
+    <TextView
+        android:id="@+id/TextviewSante"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Santé"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewAlimentation" />
+
+    <TextView
+        android:id="@+id/TextviewAlimentation"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Alimentation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/TextviewSommeLoisirs"
+        android:layout_width="122dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toRightOf="@+id/TextviewLoisirs"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewSommeSante"
+        />
+
+    <TextView
+        android:id="@+id/TextviewSommeSante"
+        android:layout_width="123dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toRightOf="@+id/TextviewSante"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewSommeAlimentation" />
+
+    <TextView
+        android:id="@+id/TextviewSommeEssence"
+        android:layout_width="123dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toRightOf="@+id/TextviewEssence"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewSommeLoisirs" />
+
+    <TextView
+        android:id="@+id/TextviewSommeAlimentation"
+        android:layout_width="124dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toRightOf="@+id/TextviewAlimentation"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/ButtonTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="GetFromServeur"
+        android:text="Test"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewEssence"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/BtnSync"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="91dp"
+        android:text="Sync"
+        android:onClick="Synchroniser"
+        app:layout_constraintLeft_toRightOf="@+id/ButtonTest"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewSommeEssence" />
+
+</android.support.constraint.ConstraintLayout>
